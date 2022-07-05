@@ -1,0 +1,35 @@
+<section>
+    <div class="container">
+         <div class="row">
+              <div class="col">
+                  <div class="add_wrapper">
+                      <div class="form">
+                        <form action="/students/create" method="POST" enctype="multipart/form-data">
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Name:</label>
+                          <input name="name" type="text" class="form-control" id="name">
+                      
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input name="email" type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                             <label for="phone" class="form-label">Phone number</label>
+                             <input name="phone" type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                           <label for="photo" class="form-label">Photo</label>
+                           <input name="photo" type="file" class="form-control" id="photo">
+                        </div>
+                   
+                      <button type="submit" class="btn btn-primary">Add Student</button>
+                      <a class="btn btn-primary" href="/students">Back</a>
+                      </form>
+                      </div>
+                                      
+                  </div>
+              </div>
+         </div>
+    </div>
+</section>

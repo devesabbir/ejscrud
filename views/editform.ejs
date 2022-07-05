@@ -1,0 +1,39 @@
+<section>
+    <div class="container">
+         <div class="row">
+              <div class="col">
+                  <div class="add_wrapper">
+                      <div class="form">
+                        <h3>Edit Item</h3>
+                        <form action="/students/edit" method="POST" enctype="multipart/form-data">
+                        <div class="mb-3">
+                          <input name="id" type="text" value="<%= editdata._id %>" hidden>
+                      
+                          <label for="name" class="form-label">Name:</label>
+                          <input  name="name" type="text" class="form-control" id="name" value="<%= editdata.name %> ">
+                      
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input name="email" type="email" class="form-control" id="email" value="<%= editdata.email %>" >
+                        </div>
+                        <div class="mb-3">
+                             <label for="phone" class="form-label">Phone number</label>
+                             <input name="phone" type="tel" class="form-control" id="phone" value="<%= editdata.phone %>">
+                        </div>
+                        <div class="mb-3">
+                           <label for="photo" class="form-label">Photo</label>
+                           <input name="photo" type="file" class="form-control" id="photo">
+                           <input name="old_photo" type="text" value="<%= editdata.photo %>" hidden>
+                        </div>
+                   
+                      <button type="submit" class="btn btn-primary">Update Student</button>
+                      <a class="btn btn-primary" href="/students">Back</a>
+                      </form>
+                      </div>
+                                      
+                  </div>
+              </div>
+         </div>
+    </div>
+</section>

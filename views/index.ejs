@@ -1,0 +1,44 @@
+<section class="p-3 ">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="wrapper">
+
+          <table>
+            <a class="btn btn-primary" href="/students/create">Add Student</a>
+            <thead>
+              <tr>
+                <th>Avatar</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <% students.forEach((data,index) => { %>
+              <tr>
+                <td><img src="./assets/uploads/<%= data.photo %> " alt="img"></td>
+                <td><%= data.name %> </td>
+                <td><%= data.phone %> </td>
+                <td><%= data.email %> </td>
+                <td>
+                  <a class="btn btn-success" href="/students/<%= data._id %> "><i class="fa-solid fa-eye"></i></a>
+                  <a class="btn btn-success" href="/students/edit/<%= data._id %> "><i class="fa-solid fa-user-pen"></i></a>
+                  
+                  <a class="btn btn-danger" href="/students/delete/<%= data._id %> "><i class="fa-solid fa-trash"></i></a>
+
+                </td>
+              </tr>
+
+              <% }) %>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

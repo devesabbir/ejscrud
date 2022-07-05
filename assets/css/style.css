@@ -1,0 +1,44 @@
+img{
+    max-width: 100%;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+table thead{
+    background-color: black;
+    color:#fff;
+ 
+}
+
+td img{
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+.body-content {
+    display: flex !important;
+}
+
+.body-content .left {
+    flex-basis: 50%;
+}
+
+.body-content .right {
+    flex-basis: 50%;
+}
+
+.right img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+ul{
+    list-style: none;
+}

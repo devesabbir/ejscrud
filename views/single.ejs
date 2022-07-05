@@ -1,0 +1,29 @@
+<section>
+    <div class="container">
+        <div class="row">
+             <div class="col">
+                 <div class="card p-2">                 
+                     <div class="body-content">
+                            <div class="left">
+                                <div class="about p-2">
+                                    <h2>Contact info</h2>
+                                    <hr>
+                                    <ul>
+                                        <li><h4>Name: <%= singleStudent.name %></h4> </li>
+                                        <li><h4>Phone: <a href="tel:+<%= singleStudent.phone %>"><%= singleStudent.phone %></a></h4> </li>
+                                        <li><h4>Email<a href="mailto:<%= singleStudent.email %> "><%= singleStudent.email %> </a></h4></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="right">
+                                 <img class="card-img" src="../assets/uploads/<%= singleStudent.photo  %> " alt="">
+                            </div>
+                          
+                         </div>
+                         <a href="/students"><i class="fa-solid fa-arrow-left-long"></i></a>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+</section>
