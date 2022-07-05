@@ -1,7 +1,7 @@
 const express = require('express'); //
 const app = express();
 require('dotenv').config();
-const port = process.env.PORT || '3000';
+const port = '5050';
 const path = require('path');
 const router = require('./routes/StudentsRoutes');
 const expressLayouts = require('express-ejs-layouts');
